@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#0f4945">
+
+    <!-- Título Superior -->
+    <TextView
+        android:id="@+id/tv_select_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar mi idioma"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"/>
+
+    <!-- Etiqueta para el Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idioma"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Lista Desplegable de Idiomas -->
+    <Spinner
+        android:id="@+id/spinner_languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:popupBackground="#0f4945"/>
+
+    <!-- Etiqueta para el Buscador -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar idioma"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Buscador de Idiomas -->
+    <EditText
+        android:id="@+id/et_language_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe para buscar"
+        android:textColorHint="#80FFFFFF"
+        android:textColor="#FFFFFF"
+        android:background="@android:drawable/edit_text"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Botón Guardar Idioma -->
+    <Button
+        android:id="@+id/btn_save_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar idioma"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:backgroundTint="#26d8cc"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

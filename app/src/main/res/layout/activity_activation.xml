@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#0f4945">
+
+    <!-- Título de la pantalla -->
+    <TextView
+        android:id="@+id/tv_setup_complete_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Configuración completada!"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Mensaje de confirmación -->
+    <TextView
+        android:id="@+id/tv_setup_complete_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La aplicación está lista para usar con la configuración y el idioma seleccionados."
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_setup_complete_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"/>
+
+    <!-- Información del idioma seleccionado -->
+    <TextView
+        android:id="@+id/tv_selected_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idioma seleccionado: Español"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/tv_setup_complete_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Botón para abrir WhatsApp -->
+    <Button
+        android:id="@+id/btn_open_whatsapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir WhatsApp" />
+
+    <!-- Nota adicional -->
+    <TextView
+        android:id="@+id/tv_additional_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahora puedes usar WhatsApp con la traducción automática activada."
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/btn_open_whatsapp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"/>
+
+</RelativeLayout>
