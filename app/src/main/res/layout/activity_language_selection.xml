@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#0f4945">
+
+    <!-- Título Superior -->
+    <TextView
+        android:id="@+id/tv_select_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Traducción"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"/>
+
+    <!-- Etiqueta para el Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción de traducción"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Lista Desplegable de Opciones de Traducción -->
+    <Spinner
+        android:id="@+id/spinner_languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:popupBackground="#0f4945"/>
+
+    <!-- Botón Guardar Opción de Traducción -->
+    <Button
+        android:id="@+id/btn_save_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar opción"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:backgroundTint="#26d8cc"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

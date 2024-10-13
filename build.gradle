@@ -1,0 +1,22 @@
+// Este archivo está en la raíz del proyecto
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.5.1' // Usa la última versión estable
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20" // Actualiza también la versión de Kotlin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
